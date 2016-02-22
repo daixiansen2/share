@@ -13,7 +13,6 @@ import java.util.Calendar;
 import java.util.Date;
 
 /**
- * 时间日期选择控件
  * Created by Sai on 15/11/22.
  */
 public class TimePickerView extends BasePickerView implements View.OnClickListener {

@@ -125,7 +125,7 @@ public class WheelView extends View {
         gestureDetector.setIsLongpressEnabled(false);
 
         isLoop = true;
-        textSize = 0;//#333333
+        textSize = 0;
         colorGray = 0xffafafaf;
         colorBlack = 0xff313131;
         colorLightGray = 0xffc5c5c5;
@@ -135,22 +135,21 @@ public class WheelView extends View {
 
         initPaints();
 
-        setTextSize(5F);
+        setTextSize(16F);
     }
 
     private void initPaints() {
         paintOuterText = new Paint();
         paintOuterText.setColor(colorGray);
         paintOuterText.setAntiAlias(true);
-        paintOuterText.setTypeface(Typeface.DEFAULT );
+        paintOuterText.setTypeface(Typeface.MONOSPACE);
         paintOuterText.setTextSize(textSize);
 
         paintCenterText = new Paint();
         paintCenterText.setColor(colorBlack);
         paintCenterText.setAntiAlias(true);
         paintCenterText.setTextScaleX(1.1F);
-        //修改字体样式
-        paintCenterText.setTypeface(Typeface.DEFAULT );
+        paintCenterText.setTypeface(Typeface.MONOSPACE);
         paintCenterText.setTextSize(textSize);
 
         paintIndicator = new Paint();

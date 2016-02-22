@@ -1,5 +1,7 @@
 package com.bigkoo.pickerview.adapter;
 
+import android.R.integer;
+
 
 /**
  * Numeric Wheel adapter.
@@ -49,6 +51,6 @@ public class NumericWheelAdapter implements WheelAdapter {
 	
 	@Override
 	public int indexOf(Object o){
-		return (int)o - minValue;
+		return (Integer)o - minValue;
 	}
 }
